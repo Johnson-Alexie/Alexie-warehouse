@@ -1,0 +1,3 @@
+/home/alexie/Desktop/opencv_cmake/build/CMakeFiles/opencv_demo.dir
+/home/alexie/Desktop/opencv_cmake/build/CMakeFiles/edit_cache.dir
+/home/alexie/Desktop/opencv_cmake/build/CMakeFiles/rebuild_cache.dir
