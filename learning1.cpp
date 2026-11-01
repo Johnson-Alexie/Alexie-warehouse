@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+#include <string>
 using namespace std;
 
 /*                                  //if 案例 2016.10.24
@@ -248,11 +249,61 @@ print(arr,len);
 return 0;
 }
 */
+/*                                          //结构体 函数 案例 2026.10.26
+
+struct students         //学生 结构体
+{
+    string sname;
+    int score;
+};
+
+struct teacher          //老师 结构体
+{
+    string tname;
+    students stu[5];
+};
 
 
+void add(teacher tea[],int len)   //赋值函数
+{
+    string namenum = "ABCDE";
+    for(int i = 0;i < len;i++)
+    {
+        tea[i].tname = "Teacher_";
+        tea[i].tname += namenum[i];
+        for(int j = 0;j < 5;j++)
+        {
+            tea[i].stu[j].sname = "Student_";
+            tea[i].stu[j].sname += namenum[j];
+            tea[i].stu[j].score = rand() %61 + 40;
+        }
+    }
+}
 
+void print(teacher tea[],int len)  //打印函数
+{
+    for(int i = 0;i < len;i++)
+    {
+        cout << tea[i].tname << endl;
+        for(int j = 0;j < 5;j++)
+        {
+            cout <<"\t"<< tea[i].stu[j].sname << " " << tea[i].stu[j].score << endl;
+        }
 
+    }
+}
+int main()
+{
+srand((unsigned int)time(NULL));
+teacher tea[3];
+int len = sizeof(tea) / sizeof(tea[0]);
 
+add(tea,len);
+print(tea,len);
+
+return 0;
+}
+*/
 
 
 
