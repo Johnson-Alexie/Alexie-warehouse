@@ -305,9 +305,99 @@ return 0;
 }
 */
 
+/*                                       //封装1 
+class student
+{
+public:                  //公共权限
+
+        //属性          //成员属性 成员变量
+    string m_name;
+    int m_id;
+
+        //行为          //成员函数 成员方法
+        //显示
+    void show()
+    {
+        cout << m_name << m_id <<endl;
+    }
+    void setname(string name)
+    {
+        m_name = name;
+    }
+    void setid(int id)
+    {
+        m_id = id;
+    }
+};
+
+int main()
+{
+                //实例化
+    student s1;
+
+    s1.setname( "张三");
+    s1.setid( 1);
+
+    s1.show();
+
+    student s2;
+
+    s2.m_name = "新";
+    s2.m_id = 2;
+
+    s2.show();
+}
+*/
+
+/*                                          //封装2
+class Cube
+{
+private:
+    int m_l = 0;
+    int m_h = 0;
+    int m_w = 0;
 
 
+public:
+    void setl(int l)
+    {
+        m_l = l;
+    }
 
+    void setw(int w)
+    {
+        m_w = w;
+    }
+
+    void seth(int h)
+    {
+        m_h = h;
+    }
+
+    int calculateS()
+    {
+        return 2*m_l*m_w + 2*m_l*m_h + 2*m_h*m_w;
+    }
+
+    int calculateV()
+    {
+        return m_h*m_l*m_w;
+    }
+};
+
+
+int main()
+{
+    Cube c1;
+    c1.setl(2);
+    c1.seth(3),
+    c1.setw(4);
+    cout << c1.calculateS() << "  " << c1.calculateV();
+
+    Cube c2;
+
+}
+*/
 
 
 
