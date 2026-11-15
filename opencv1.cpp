@@ -123,7 +123,7 @@ int main()
 
 // int main()
 // {
-//     Mat img = imread("object/car.png");
+//     Mat img = imread("object/light2.png");
 //     Mat imgHSV , mask;
 //     int hmin = 0, smin = 20, vmin = 20;
 //     int hmax = 180, smax = 255, vmax = 255;
