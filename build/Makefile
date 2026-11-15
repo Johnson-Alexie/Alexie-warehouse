@@ -129,29 +129,29 @@ opencv_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_demo.dir/build.make CMakeFiles/opencv_demo.dir/build
 .PHONY : opencv_demo/fast
 
-opencv1.o: opencv1.cpp.o
-.PHONY : opencv1.o
+lightdetect.o: lightdetect.cpp.o
+.PHONY : lightdetect.o
 
 # target to build an object file
-opencv1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_demo.dir/build.make CMakeFiles/opencv_demo.dir/opencv1.cpp.o
-.PHONY : opencv1.cpp.o
+lightdetect.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_demo.dir/build.make CMakeFiles/opencv_demo.dir/lightdetect.cpp.o
+.PHONY : lightdetect.cpp.o
 
-opencv1.i: opencv1.cpp.i
-.PHONY : opencv1.i
+lightdetect.i: lightdetect.cpp.i
+.PHONY : lightdetect.i
 
 # target to preprocess a source file
-opencv1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_demo.dir/build.make CMakeFiles/opencv_demo.dir/opencv1.cpp.i
-.PHONY : opencv1.cpp.i
+lightdetect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_demo.dir/build.make CMakeFiles/opencv_demo.dir/lightdetect.cpp.i
+.PHONY : lightdetect.cpp.i
 
-opencv1.s: opencv1.cpp.s
-.PHONY : opencv1.s
+lightdetect.s: lightdetect.cpp.s
+.PHONY : lightdetect.s
 
 # target to generate assembly for a file
-opencv1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_demo.dir/build.make CMakeFiles/opencv_demo.dir/opencv1.cpp.s
-.PHONY : opencv1.cpp.s
+lightdetect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencv_demo.dir/build.make CMakeFiles/opencv_demo.dir/lightdetect.cpp.s
+.PHONY : lightdetect.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... opencv_demo"
-	@echo "... opencv1.o"
-	@echo "... opencv1.i"
-	@echo "... opencv1.s"
+	@echo "... lightdetect.o"
+	@echo "... lightdetect.i"
+	@echo "... lightdetect.s"
 .PHONY : help
 
 

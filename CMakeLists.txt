@@ -14,7 +14,7 @@ message(STATUS "OpenCV 版本: " ${OpenCV_VERSION})
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # 生成可执行文件
-add_executable(opencv_demo opencv1.cpp)
+add_executable(opencv_demo lightdetect.cpp)
 
 # 把OpenCV库链接到生成的可执行文件上
 target_link_libraries(opencv_demo ${OpenCV_LIBS})

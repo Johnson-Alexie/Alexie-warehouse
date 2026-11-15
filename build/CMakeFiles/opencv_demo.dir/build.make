@@ -69,28 +69,28 @@ include CMakeFiles/opencv_demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/opencv_demo.dir/flags.make
 
-CMakeFiles/opencv_demo.dir/opencv1.cpp.o: CMakeFiles/opencv_demo.dir/flags.make
-CMakeFiles/opencv_demo.dir/opencv1.cpp.o: ../opencv1.cpp
-CMakeFiles/opencv_demo.dir/opencv1.cpp.o: CMakeFiles/opencv_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexie/Desktop/opencv_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencv_demo.dir/opencv1.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv_demo.dir/opencv1.cpp.o -MF CMakeFiles/opencv_demo.dir/opencv1.cpp.o.d -o CMakeFiles/opencv_demo.dir/opencv1.cpp.o -c /home/alexie/Desktop/opencv_cmake/opencv1.cpp
+CMakeFiles/opencv_demo.dir/lightdetect.cpp.o: CMakeFiles/opencv_demo.dir/flags.make
+CMakeFiles/opencv_demo.dir/lightdetect.cpp.o: ../lightdetect.cpp
+CMakeFiles/opencv_demo.dir/lightdetect.cpp.o: CMakeFiles/opencv_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexie/Desktop/opencv_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencv_demo.dir/lightdetect.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencv_demo.dir/lightdetect.cpp.o -MF CMakeFiles/opencv_demo.dir/lightdetect.cpp.o.d -o CMakeFiles/opencv_demo.dir/lightdetect.cpp.o -c /home/alexie/Desktop/opencv_cmake/lightdetect.cpp
 
-CMakeFiles/opencv_demo.dir/opencv1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_demo.dir/opencv1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexie/Desktop/opencv_cmake/opencv1.cpp > CMakeFiles/opencv_demo.dir/opencv1.cpp.i
+CMakeFiles/opencv_demo.dir/lightdetect.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_demo.dir/lightdetect.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexie/Desktop/opencv_cmake/lightdetect.cpp > CMakeFiles/opencv_demo.dir/lightdetect.cpp.i
 
-CMakeFiles/opencv_demo.dir/opencv1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_demo.dir/opencv1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexie/Desktop/opencv_cmake/opencv1.cpp -o CMakeFiles/opencv_demo.dir/opencv1.cpp.s
+CMakeFiles/opencv_demo.dir/lightdetect.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_demo.dir/lightdetect.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexie/Desktop/opencv_cmake/lightdetect.cpp -o CMakeFiles/opencv_demo.dir/lightdetect.cpp.s
 
 # Object files for target opencv_demo
 opencv_demo_OBJECTS = \
-"CMakeFiles/opencv_demo.dir/opencv1.cpp.o"
+"CMakeFiles/opencv_demo.dir/lightdetect.cpp.o"
 
 # External object files for target opencv_demo
 opencv_demo_EXTERNAL_OBJECTS =
 
-opencv_demo: CMakeFiles/opencv_demo.dir/opencv1.cpp.o
+opencv_demo: CMakeFiles/opencv_demo.dir/lightdetect.cpp.o
 opencv_demo: CMakeFiles/opencv_demo.dir/build.make
 opencv_demo: /usr/local/lib/libopencv_gapi.so.4.10.0
 opencv_demo: /usr/local/lib/libopencv_stitching.so.4.10.0

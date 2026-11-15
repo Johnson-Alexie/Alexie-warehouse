@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/alexie/Desktop/opencv_cmake/opencv1.cpp" "CMakeFiles/opencv_demo.dir/opencv1.cpp.o" "gcc" "CMakeFiles/opencv_demo.dir/opencv1.cpp.o.d"
+  "/home/alexie/Desktop/opencv_cmake/lightdetect.cpp" "CMakeFiles/opencv_demo.dir/lightdetect.cpp.o" "gcc" "CMakeFiles/opencv_demo.dir/lightdetect.cpp.o.d"
   )
 
 # Targets to which this target links.
