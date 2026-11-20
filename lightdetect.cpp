@@ -73,7 +73,29 @@ int main()
 }
 
 
+// Rect armorRect(min(leftTop.x, rightBottom.x),      // ← 左上角的 x
+//                min(leftTop.y, rightBottom.y),      // ← 左上角的 y
+//                abs(rightBottom.x - leftTop.x),     // ← 宽度
+//                abs(rightBottom.y - leftTop.y));    // ← 高度
 
+// 1. min(leftTop.x, rightBottom.x)
+// 两个点的横坐标，取小的那个当左边。
+// 不管谁在左，min 出来的永远是更靠左的 x → 保证左上角 x 合法。
+
+
+// 2. min(leftTop.y, rightBottom.y)
+// 两个点的纵坐标，取 小的那个 当上边。
+// 图像坐标系 y 向下增大，所以 min 出来的是更靠上的 → 保证左上角 y 合法。
+
+
+// 3. abs(rightBottom.x - leftTop.x)
+// 宽度 = 两点横向距离。
+// 不管谁减谁，套个 abs 永远是 正数  → 不会出现负宽。
+
+
+
+// 4. abs(rightBottom.y - leftTop.y)
+// 高度 = 两点纵向距离，同理 abs 保证正数。
 
 
 
