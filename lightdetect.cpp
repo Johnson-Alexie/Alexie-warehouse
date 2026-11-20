@@ -32,6 +32,7 @@ int main()
     findContours(mask, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);       //寻找轮廓
 
     Mat result  = img.clone();
+    vector<Rect> lights;                                    // ← 新增：收集灯条矩形
 
     for(int i = 0;i < contours.size();i++)
     {
@@ -44,6 +45,25 @@ int main()
         Rect r = boundingRect(contours[i]);
 
         rectangle(result, r, Scalar(0, 255, 0),2);          //圈出灯条
+        lights.push_back(r);         // ← 新增：把每个灯条矩形存起来
+
+    }
+
+    if (lights.size() == 2)
+    {
+        // 按 x 排序，小的在左
+        if (lights[0].x > lights[1].x)
+            swap(lights[0], lights[1]);
+
+        // 左灯条左上角
+        Point leftTop(lights[0].x, lights[0].y);
+        // 右灯条右下角
+        Point rightBottom(lights[1].x + lights[1].width,
+                          lights[1].y + lights[1].height);
+
+        // 用两点构造包住两个灯条的大矩形
+        Rect armorRect(leftTop, rightBottom);
+        rectangle(result, armorRect, Scalar(0, 0, 255), 2);  // 红色大框
     }
 
     imshow("result", result);
