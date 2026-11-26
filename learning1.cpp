@@ -399,6 +399,150 @@ int main()
 }
 */
 
+/*                                                      //深拷贝
+class Person
+{
+public:
+    Person()
+    {
+        cout << "person的默认构造函数调用" << endl;
+    }
+
+    Person(const Person &p)
+    {
+        cout << "person的拷贝构造函数调用" << endl;
+        m_age = p.m_age;
+        // m_height = p.m_height;               //浅拷贝地址(带来重复释放堆区的问题)
+        m_height = new int(*p.m_height);        //深拷贝
+    }
+
+    Person(int age ,int height)
+    {
+        m_age = age;
+        m_height = new int(height);
+        cout << "person的有参构造函数调用" << endl;
+    }
+    ~Person()
+    {
+        cout << "person的析构函数调用" << endl;
+        if(m_height != NULL)
+        {
+            delete m_height;
+            m_height = NULL; 
+        }
+    }
+
+    int m_age;
+    int *m_height;
+};
+
+int main()
+{
+    Person p1 (18 ,5);
+
+    cout << "年龄" << p1.m_age << endl;
+
+    Person p2 (p1);
+
+    cout << "年龄" << p2.m_age << endl;
+    cout << "height" << *p2.m_height << endl;
+}
+*/
+
+/*                                               //初始化列表
+class person
+{
+public:
+    person(int a,int b,int c) :m_a(a),m_b(b),m_c(c){}
+
+    int m_a;
+    int m_b;
+    int m_c;
+
+};
+
+int main()
+{
+    person p(10,5,6);
+    cout << p.m_a << p.m_b << p.m_c << endl;
+}
+*/
+
+/*                                              //类作类的成员
+class phone
+{
+public:
+
+    phone(string pname)
+    {
+        p_name = pname;
+    }
+string p_name;
+};
+
+class person
+{
+public:
+
+person(string name ,string pname) : m_name(name),m_phone(pname){}   //phone m_phone = pname
+string m_name;
+phone m_phone;
+};
+
+
+int main()
+{
+    person p("和","三星");
+    cout << p.m_name << " " << p.m_phone.p_name << endl;
+}
+*/
+
+/*                                               //静态成员变量(在编译阶段分配内存)(类内声明，类外初始化)
+class person
+{
+public:
+static int m_a;
+
+};
+
+int person::m_a = 100;
+
+int main()
+{
+    person p;
+    cout << p.m_a << endl;
+    cout << person::m_a << endl;                //通过类名可以访问
+}
+*/ 
+
+
+/*                                               //静态成员函数(只能访问静态成员变量)
+class person
+{
+public:
+
+    static void func()
+    {
+        m_a = 100;
+        cout << "静态成员函数" << m_a << endl;
+    }
+
+static int m_a;
+};
+int person::m_a;
+
+int main()
+{
+    person p;
+    person::func();
+}
+*/
+
+
+
+
+
+
 
 
 

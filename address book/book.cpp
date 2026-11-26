@@ -211,6 +211,7 @@ void clearperson(addressbook * ads)         //清空通讯录
 
 int main()
 {
+    int i = 0;
     int select = 0;
     addressbook ads;
     string name;
@@ -245,5 +246,4 @@ while(true)
     }
 }
 
-return 0;
 }
